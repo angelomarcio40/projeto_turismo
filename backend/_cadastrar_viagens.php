@@ -13,7 +13,7 @@ try{
     $titulo = $_POST['titulo'];
     $local = $_POST['local'];
     $valor = $_POST['valor'];
-    $tdesc = $_POST['desc'];
+    $desc = $_POST['desc'];
 
     // variavel que recebe a querry SQL que será executada no BD
     $sql = "INSERT INTO
