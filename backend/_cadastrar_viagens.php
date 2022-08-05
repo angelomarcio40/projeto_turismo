@@ -42,8 +42,12 @@ $comando->execute();
 // exibe msg de sucesso ao inserir
 echo "Cadastro realizado com sucesso!";
 
-}catch(PDOException $erro){
+// fechar a onexao
+$con = null;
 
+}catch(PDOException $erro){
+    echo $erro-> getMessage();
+    die();
 }
 
 // Final da conexão
