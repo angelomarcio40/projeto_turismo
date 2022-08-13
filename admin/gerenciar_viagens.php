@@ -50,7 +50,10 @@
                     <td><?php echo $viagem['local']?></td>
                     <td><?php echo $viagem['valor']?></td>
                     <td><?php echo $viagem['descricao']?></td>
-                    <td>Alterar</td>   
+
+                    <td>
+                        <a href="alterar_viagens.php?id=<?php echo $viagem['id']?>">Alterar</a>
+                    </td>
                     <td>
                         <a href="../backend/_deletar_viagens.php?id=<?php echo $viagem['id']?>">Deletar</a>
                     </td>
