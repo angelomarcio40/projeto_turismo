@@ -13,6 +13,7 @@ try{
                 WHERE 
                     email='$usuario' 
                 AND
+                    BINARY
                     senha = '$senha'
                 AND
                     ativo = 1
