@@ -40,6 +40,10 @@ try{
 <body>
     <div id="container">
         <h3>Alterar Viagens</h3>
+        <hr>
+        <a href="cadastrar_viagens.html">Cadastra Viagens</a>
+        <hr>
+        
         <form action="../backend/_alterar_viagens.php" method="post">
 
         <div id="grid-alterar">
