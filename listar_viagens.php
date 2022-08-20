@@ -41,7 +41,7 @@ try{
         foreach($dados as $d):
     ?>
         <figure class="figure-viagens">
-            <img class="img-viagens" src="img/viagem-faltando.png" alt="Imagem da viagem">
+            <img class="img-viagens" src="img/upload/<?php echo $d['imagen']?>" alt="Imagem da viagem">
             <figcaption class="figcaption-viagens">
                 <h4><?php echo $d['titulo'];?></h4>
                 <h5><?php echo $d['local'];?></h5>
