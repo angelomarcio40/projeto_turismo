@@ -42,9 +42,6 @@ try{
     // caminho onde a imagem sera armazenada
     $pasta = '../img/upload/';
 
-    // define novo nome da imagem para o upload
-    $imagem = 'foto.jpg';
-
     // função PHP que faz o upload da imagem
     move_uploaded_file($_FILES['imagem']['tmp_name'],$pasta.$nome_final_imagem);
 
@@ -55,7 +52,7 @@ try{
                 `local` = '$local',
                 `valor` = '$valor',
                 `descricao` = '$descricao',
-                `imagen` = '$nome_original_imagem'
+                `imagen` = '$nome_final_imagem'
             WHERE
                 id = $id;
             ";
