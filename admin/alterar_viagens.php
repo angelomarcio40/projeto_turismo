@@ -44,7 +44,7 @@ try{
         <a href="cadastrar_viagens.html">Cadastra Viagens</a>
         <hr>
         
-        <form action="../backend/_alterar_viagens.php" method="post">
+        <form action="../backend/_alterar_viagens.php" method="post" enctype="multipart/form-data">
 
         <div id="grid-alterar">
             <div>
@@ -62,6 +62,15 @@ try{
             <div>
                 <label for="valor">Valor</label>
                 <input type="text" name="valor" id="valor" value="<?php echo $dados[0]['valor'];?>">
+            </div>
+            <div>
+                <label for="imagem">Imagem</label>
+                <input type="file" name="imagem" id="imagem">
+                <div class="viagem">
+                    <img class="img-alterar" src="../img/upload/<?php echo $dados[0]['imagen'];?>" alt="">
+                </div>
+
+                </div>
             </div>
             <div>
                 <label for="descricao">Descrição</label>
