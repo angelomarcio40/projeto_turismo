@@ -35,6 +35,7 @@
     <hr>
 
     <a href="cadastrar_viagens.html">Cadastra Viagens</a>
+    <a href="index.html">Sair</a>
 
     <hr>
 
