@@ -1,5 +1,6 @@
 <?php
 
+include '../backend/controle_sessao.php';
 include "conexao.php";
 
 try{

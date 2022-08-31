@@ -11,7 +11,7 @@ try{
                 FROM 
                     tb_login 
                 WHERE 
-                    email='$eusuario' 
+                    email ='$usuario' 
                 AND
                     BINARY
                     senha = '$senha'
@@ -32,13 +32,16 @@ try{
     // verifica se exitem registros dentro da virável dados
     if($dados != null){
         // inicia a seção
-        session_start(); 
+        session_start();
+        // var_dump(session_id());
+        // exit;
         
         // criar uma vriável adicionadao na variável de sessão email
-        $_SESSION['email'] = $usuario;
+        $_SESSION['usuario'] = $usuario;
 
         // exibe o valor adicionado na virávek de sessão usuario
-        var_dump($_SESSION['usuario']);
+        // var_dump($_SESSION['usuario']);
+        // exit;
 
         // se o usuário e senha são validos, irá entrar nesse trecho de código
         header('Location: ../admin/gerenciar_viagens.php');

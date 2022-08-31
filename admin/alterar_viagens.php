@@ -1,4 +1,6 @@
 <?php
+
+include '../backend/controle_sessao.php';
 // include da conexão
 include '../backend/conexao.php';
 
@@ -41,7 +43,8 @@ try{
     <div id="container">
         <h3>Alterar Viagens</h3>
         <hr>
-        <a href="cadastrar_viagens.html">Cadastra Viagens</a>
+        <a href="cadastrar_viagens.php">Cadastra Viagens</a>
+        <a href="../backend/logout.php">Sair</a>
         <hr>
         
         <form action="../backend/_alterar_viagens.php" method="post" enctype="multipart/form-data">

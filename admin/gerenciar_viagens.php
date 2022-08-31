@@ -1,4 +1,6 @@
 <?php
+
+    include '../backend/controle_sessao.php';
     include '../backend/conexao.php';
 
     try{
