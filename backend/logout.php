@@ -6,6 +6,5 @@ session_unset();
 
 session_destroy();
 
-header('Location: ../admin/index.html');
-
+header('Location: ../admin/index.php');
 ?>

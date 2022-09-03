@@ -9,8 +9,7 @@ $usuario = $_SESSION['usuario'];
 
 // se o usuaro não estiver logado, redreciona para tela login
 if($usuario == null){
-    header('Location: index.html');
+    header('Location: index.php');
     exit;
 }
-
 ?>

@@ -36,8 +36,8 @@
 
     <hr>
 
-    <a href="cadastrar_viagens.html">Cadastra Viagens</a>
-    <a href="index.html">Sair</a>
+    <a href="cadastrar_viagens.php">Cadastra Viagens</a>
+    <a href="../backend/logout.php">Sair</a>
 
     <hr>
 
